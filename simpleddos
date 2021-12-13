@@ -9,7 +9,4 @@ read number
 echo "Number of competitive requests:"
 read requests
 
-for ((i=1; i<10; i++))
-do
 ab -n $number -c $requests -k -r -H "User-Agent: Google Bot" $address
-done
